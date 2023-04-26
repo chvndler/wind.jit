@@ -1,0 +1,42 @@
+{
+    "theme": {
+        "extend": {
+            "colors": {
+                "elite-dark": "#141414",
+                "elite-black": "#000000",
+                "elite-light": "#FFFFFF",
+                "elite-white-A3": "rgba(231, 233, 235, 0.4)",
+
+                "elite-000": "#F4F4F5",
+                "elite-100": "#FDE9F1",
+                "elite-200": "#BBBDC5",
+                "elite-300": "#727680",
+                "elite-500": "#2F3137",
+                "elite-400": "#4F5A6B",
+                "elite-600": "#3C4D61",
+                "elite-700": "#231F20",
+
+                "elite-800": "#BFF163",
+                "elite-900": "#94E522",
+
+                "elite-sp-pink": "#EB008B",
+                "elite-sp-blue": "#00ADEE",
+                "elite-sp-purple": "#836DC5",
+
+                "elite-green": {
+                    "50": "#f6fee7",
+                    "100": "#eafccb",
+                    "200": "#d6fa9c",
+                    "300": "#b9f363",
+                    "400": "#94e522",
+                    "500": "#7dcd15",
+                    "600": "#5fa40c",
+                    "700": "#497d0e",
+                    "800": "#3c6212",
+                    "900": "#345314",
+                    "950": "#182e05"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.autoSave": "onWindowChange",
+  "editor.fontSize": 11,
+  "editor.fontFamily": "SF Mono",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "window.zoomLevel": 0.2,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "600",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.colorTheme": "Everblush",
+
+  "github.copilot.inlineSuggest.enable": true
+}

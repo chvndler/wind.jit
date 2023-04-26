@@ -1,0 +1,16 @@
+{
+    "name": "wind.jit",
+    "packageManager": "yarn@3.2.2",
+    "version": "0.1.0",
+    "main": "index.html",
+    "keywords": [],
+    "license": "MIT",
+    "scripts": {
+        "start": "serve"
+    },
+    "devDependencies": {
+        "prettier": "^2.8.8",
+        "prettier-plugin-tailwindcss": "^0.2.7",
+        "serve": "^14.2.0"
+    }
+}
