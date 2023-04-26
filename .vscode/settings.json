@@ -1,7 +1,7 @@
 {
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
-  "editor.fontSize": 11,
+  "editor.fontSize": 12,
   "editor.fontFamily": "SF Mono",
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
