@@ -8,4 +8,25 @@
 # Swap the comments on the following lines if you don't wish to use zero-installs
 # Documentation here: https://yarnpkg.com/features/zero-installs
 .yarn/cache
+.pnp.cjs
+.pnp.loader.mjs
 #.pnp.*
+
+# vscode
+.vscode/*
+
+# dependencies
+node_modules/
+package-lock.json
+
+# outputs
+dist/*
+dist-ssr
+
+*.log
+*.local
+
+.env
+.cache
+server/dist
+public/dist
