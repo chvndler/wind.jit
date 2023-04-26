@@ -1,5 +1,5 @@
-console.log("Hello World!");
+/** @format */
 
-console.log("%cHello World!", "color: darkseagreen;");
+console.log('Hello, from wind.jit');
 
-console.log("We found an object, %O, in the system", { foo: "bar" });
+console.log('%cHello, from wind.jit', 'color: darkseagreen;');

@@ -6,7 +6,8 @@
     "keywords": [],
     "license": "MIT",
     "scripts": {
-        "start": "serve"
+        "start": "serve",
+        "dev": "serve"
     },
     "devDependencies": {
         "prettier": "^2.8.8",
