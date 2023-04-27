@@ -1,19 +1,23 @@
 {
     "theme": {
         "extend": {
+            "fontFamily": {
+                "sans": "'Inter var', sans-serif"
+            },
             "colors": {
                 "elite-dark": "#141414",
                 "elite-black": "#000000",
                 "elite-light": "#FFFFFF",
-                "elite-white-A3": "rgba(231, 233, 235, 0.4)",
+                "elite-white-A3": "rgba(231, 233, 235, 0.3)",
+                "elite-white-A5": "rgba(231, 233, 235, 0.5)",
 
                 "elite-000": "#F4F4F5",
                 "elite-100": "#FDE9F1",
                 "elite-200": "#BBBDC5",
                 "elite-300": "#727680",
-                "elite-500": "#2F3137",
                 "elite-400": "#4F5A6B",
-                "elite-600": "#3C4D61",
+                "elite-500": "#3C4D61",
+                "elite-600": "#2F3137",
                 "elite-700": "#231F20",
 
                 "elite-800": "#BFF163",
