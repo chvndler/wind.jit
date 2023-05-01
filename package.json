@@ -1,17 +1,21 @@
 {
-    "name": "wind.jit",
-    "packageManager": "yarn@3.5.0",
-    "version": "0.1.0",
-    "main": "index.html",
-    "keywords": [],
-    "license": "MIT",
-    "scripts": {
-        "start": "serve",
-        "dev": "serve"
-    },
-    "devDependencies": {
-        "prettier": "^2.8.8",
-        "prettier-plugin-tailwindcss": "^0.2.7",
-        "serve": "^14.2.0"
-    }
+  "name": "wind.jit",
+  "packageManager": "yarn@3.5.0",
+  "version": "0.1.0",
+  "main": "index.html",
+  "license": "MIT",
+  "keywords": [
+    "static",
+    "template",
+    "codesandbox"
+  ],
+  "scripts": {
+    "start": "serve",
+    "dev": "serve"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "serve": "^14.2.0"
+  }
 }
