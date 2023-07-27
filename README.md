@@ -35,13 +35,21 @@ cd wind.jit
 3. Install all dependencies:
 
 ```sh
-yarn install
+pnpm install
 ```
 
-4. Run serve
+4. Run serve or live-server
+
+`serve`
 
 ```sh
-yarn dev
+pnpm serve
+```
+
+`live-server`
+
+```sh
+pnpm start
 ```
 
 ### license
