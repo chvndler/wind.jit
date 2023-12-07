@@ -20,3 +20,5 @@ public/dist
 
 # vscode
 .vscode/*
+
+.yarn
