@@ -1,0 +1,60 @@
+<!-- Alpine.js Banner -->
+<!-- if `$set_banner` is true, show the banner -->
+<div
+  id="marketing-banner"
+  class="marketing-banner">
+  <div
+    x-cloak
+    x-data="{ bannerVisible: false, bannerVisibleAfter: 300 }"
+    x-show="bannerVisible"
+    x-transition:enter="transition ease-out duration-500"
+    x-transition:enter-start="translate-y-[-100%]"
+    x-transition:enter-end="translate-y-0"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="translate-y-0"
+    x-transition:leave-end="translate-y-[-100%]"
+    x-init="setTimeout(() => { bannerVisible = true }, bannerVisibleAfter);"
+    class="relative mx-auto mt-[55px] flex w-full flex-col items-center justify-center bg-transparent text-center duration-300 ease-out md:mt-[60px] md:px-4 lg:mt-[80px]">
+    <!-- Banner Section -->
+    <div class="col-auto w-full max-w-6xl bg-[#030A0A] px-6 py-8 shadow sm:rounded-3xl">
+      <!-- All In Logo -->
+      <a
+        href="https://all-in.isielitetraining.com/#purchase-section"
+        target="_blank"
+        rel="noopener noreferrer">
+        <img
+          src="https://www.isielitetraining.com/cdn/images/global/All-In-Banner-Artwork.svg"
+          class="mx-auto h-auto w-[300px] items-center justify-center py-6 text-center sm:w-[340px]" />
+      </a>
+      <!-- End All In Logo -->
+
+      <div>
+        <p class="font-inter mb-3 px-8 text-lg font-medium text-white sm:text-lg">
+          For Your Health. For Your Happiness. For Your Confidence.
+        </p>
+        <h2
+          class="font-mona mb-6 text-3xl font-semibold tracking-tight text-white md:mb-6 md:text-4xl md:leading-tight">
+          Go <span class="text-elite-900">all in</span> for 4 weeks of unlimited training.
+        </h2>
+      </div>
+
+      <!-- Buttons -->
+      <div>
+        <a
+          href="https://all-in.isielitetraining.com/#purchase-section"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-elite-600 bg-elite-900 hover:bg-elite-800 hover:text-elite-500 border-elite-800 focus:ring-elite-800/60 focus:shadow-outline mt-4 inline-flex w-full items-center justify-center rounded-xl border border-transparent px-8 py-2 text-sm font-bold uppercase shadow-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 lg:w-auto">
+          Sign up now
+        </a>
+        <button
+          @click="bannerVisible=false;"
+          class="text-carbon-600 hover:text-carbon-500 z-10 mx-auto mt-4 block pt-4 font-sans text-xs font-bold uppercase tracking-tight">
+          Close
+        </button>
+      </div>
+    </div>
+    <!-- End Banner Section -->
+  </div>
+  <!-- End Alpine.js Banner -->
+</div>
