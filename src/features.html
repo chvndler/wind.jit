@@ -1,0 +1,181 @@
+<!-- DYNAMIC FEATURE SECTION -->
+<!-- *TESTING* -->
+<div
+  id="comp-kxtpak37"
+  class="comp-kxtpak37 xuzjBY comp-kxtpak37-container undefined"
+  data-testid="section-container"
+  tabindex="-1"
+  style="z-index: 999">
+  <section
+    id="dynamic-features"
+    class="section-background">
+    <div class="section3container">
+      <div class="section3title">
+        <h2><?php the_sub_field('section3title'); ?></h2>
+      </div>
+
+      <div class="content-container">
+        <div class="flex-container">
+          <div>
+            <?php if( have_rows('section3repeater') ): ?>
+            <ul
+              role="list"
+              class="section3list">
+              <!-- Loop through the rows of data for dynamic content -->
+              <?php while ( have_rows('section3repeater') ) : the_row(); ?>
+              <li>
+                <div
+                  id="comp-kxtpak3j4"
+                  class="BaOVQ8 tz5f0K comp-kxtpak3j4"
+                  data-testid="richTextElement">
+                  <h2 class="font_2"><span style="color: #94e522">➔</span> &nbsp;<?php the_sub_field('bullet'); ?></h2>
+                </div>
+                <div
+                  id="comp-kxtpak3n8"
+                  class="BaOVQ8 tz5f0K comp-kxtpak3n8"
+                  data-testid="richTextElement">
+                  <p class="font_8">
+                    <span><?php the_sub_field('description'); ?></span>
+                  </p>
+                </div>
+              </li>
+              <?php endwhile; ?>
+            </ul>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Just incase there are unforeseen errors here is the original code -->
+
+<!-- MEMBERSHIP PERKS SECTION : Section3Repeater
+				
+				<section id="comp-kxtpak37" class="comp-kxtpak37 xuzjBY comp-kxtpak37-container undefined" data-testid="section-container" tabindex="-1">
+					<div id="comp-kxtpak3e" class="comp-kxtpak3e Z5xE6X comp-kxtpak3e-container">
+						<div class="OSxohk"></div>
+						<div id="comp-kxtpak3g4" class="comp-kxtpak3g4 Z5xE6X comp-kxtpak3g4-container">
+							<div class="OSxohk"></div>
+							<?php
+	if( have_rows('section3repeater') ):
+				while ( have_rows('section3repeater') ) : the_row();
+							?>
+							<div id="comp-kxtpak3i" class="comp-kxtpak3i Z5xE6X comp-kxtpak3i-container">
+								<div class="OSxohk"></div>
+								<div id="comp-kxtpak3j4" class="BaOVQ8 tz5f0K comp-kxtpak3j4" data-testid="richTextElement">
+									<h2 class="font_2">
+										<span style="color:#94E522;">➔</span> &nbsp;ACCOUNTABILITY
+									</h2>
+								</div>
+								<div id="comp-kxtpak3n8" class="BaOVQ8 tz5f0K comp-kxtpak3n8" data-testid="richTextElement">
+									<p class="font_8">
+										<span>Our coaches are more motivated than your excuses!</span>
+									</p>
+								</div>
+							</div>
+							<?php
+							endwhile;
+							endif;
+
+							?>
+
+							<div id="comp-kxtpak3p4" class="comp-kxtpak3p4 Z5xE6X comp-kxtpak3p4-container">
+								<div class="OSxohk"></div>
+								<div id="comp-kxtpak3q5" class="BaOVQ8 tz5f0K comp-kxtpak3q5" data-testid="richTextElement">
+									<h2 class="font_2">
+										<span style="color:#94E522;">➔</span> &nbsp; <span class="color_11">UNLIMITED SESSIONS</span>
+									</h2>
+								</div>
+								<div id="comp-kxtpak3r9" class="BaOVQ8 tz5f0K comp-kxtpak3r9" data-testid="richTextElement">
+									<p class="font_8">
+										<span>Unlimited access to the most valuable 50 minute workout.</span>
+									</p>
+								</div>
+							</div>
+							<div id="comp-kxtpak3t3" class="comp-kxtpak3t3 Z5xE6X comp-kxtpak3t3-container">
+								<div class="OSxohk"></div>
+								<div id="comp-kxtpak3u5" class="BaOVQ8 tz5f0K comp-kxtpak3u5" data-testid="richTextElement">
+									<h2 class="font_2">
+										<span style="color:#94E522;">➔</span> &nbsp;MONTH TO MONTH
+									</h2>
+								</div>
+								<div id="comp-kxtpak3w" class="BaOVQ8 tz5f0K comp-kxtpak3w" data-testid="richTextElement">
+									<p class="font_8">
+										<span>No annual contract required.</span>
+									</p>
+								</div>
+							</div>
+							<div id="comp-kxtpak3x6" class="comp-kxtpak3x6 aVng1S"></div>
+						</div>
+						<div id="comp-kxtpak401" class="comp-kxtpak401 Z5xE6X comp-kxtpak401-container">
+							<div class="OSxohk"></div>
+							<div id="comp-kxtpak42" class="comp-kxtpak42 Z5xE6X comp-kxtpak42-container">
+								<div class="OSxohk"></div>
+								<div id="comp-kxtpak432" class="BaOVQ8 tz5f0K comp-kxtpak432" data-testid="richTextElement">
+									<h2 class="font_2">
+										<span style="color:#94E522;">➔</span> &nbsp;TRAIN ANYWHERE
+									</h2>
+								</div>
+								<div id="comp-kxtpak448" class="BaOVQ8 tz5f0K comp-kxtpak448" data-testid="richTextElement">
+									<p class="font_8">
+										<span>Use your membership at any ISI&reg; location.</span>
+									</p>
+								</div>
+							</div>
+							<div id="comp-kxtpak46" class="comp-kxtpak46 Z5xE6X comp-kxtpak46-container">
+								<div class="OSxohk"></div>
+								<div id="comp-kxtpak47" class="BaOVQ8 tz5f0K comp-kxtpak47" data-testid="richTextElement">
+									<h2 class="font_2">
+										<span style="color:#94E522;">➔</span> &nbsp;INBODY <span style="font-family:wfont_819d47_e600540e28a44f54b8b7a7c78ca5d99f,wf_e600540e28a44f54b8b7a7c78,orig_sf_pro_display_medium;">&reg;</span> SCANS
+									</h2>
+								</div>
+								<div id="comp-kxtpak48" class="BaOVQ8 tz5f0K comp-kxtpak48" data-testid="richTextElement">
+									<p class="font_8">
+										<span>Body fat analysis to track your progress.</span>
+									</p>
+								</div>
+							</div>
+							<div id="comp-kxtpak497" class="comp-kxtpak497 Z5xE6X comp-kxtpak497-container">
+								<div class="OSxohk"></div>
+								<div id="comp-kxtpak4a6" class="BaOVQ8 tz5f0K comp-kxtpak4a6" data-testid="richTextElement">
+									<h2 class="font_2">
+										<span style="color:#94E522;">➔</span> &nbsp;IRON <span style="color:#94E522;">KIDZ</span>
+									</h2>
+								</div>
+								<div id="comp-kxtpak4b10" class="BaOVQ8 tz5f0K comp-kxtpak4b10" data-testid="richTextElement">
+									<p class="font_8">
+										<span>Designated area for your child.</span>
+									</p>
+									<p class="font_8" style="font-size:12px;">
+										<span>
+											<span class="color_13">
+												<span style="font-size:12px;">*at participating facilities</span>
+											</span>
+										</span>
+									</p>
+								</div>
+							</div>
+							<div id="comp-kxtpak4d" class="comp-kxtpak4d aVng1S"></div>
+						</div>
+					</div>
+					<div id="comp-kxtpak4e4" class="comp-kxtpak4e4 Z5xE6X comp-kxtpak4e4-container">
+						<div class="OSxohk"></div>
+						<div id="comp-kxtpak4g6" class="comp-kxtpak4g6 Z5xE6X comp-kxtpak4g6-container">
+							<div class="OSxohk"></div>
+							<div id="comp-kxtpak4h4" class="BaOVQ8 tz5f0K comp-kxtpak4h4" data-testid="richTextElement">
+								<h2 class="font_2">
+									<span><?php echo $get_dynamic_title3; ?></span>
+								</h2>
+							</div>
+							<div id="comp-kxtpak4j" class="BaOVQ8 tz5f0K comp-kxtpak4j" data-testid="richTextElement">
+								<p class="font_8">
+									<span>IRON45&copy;2022&nbsp;45 Day Challenge starts on September 6, 2022 and expires on October 20, 2022.&nbsp;This is an unlimited membership with no renewal.&nbsp;Membership will begin September 6 and expire on October 20, 2022.&nbsp;This offer must be redeemed at the location of purchase and is not eligible for return, refund, or transfer - all sales are final. Offer value may not be redeemed for cash or other services or products. Valid one per visitor, cannot be combined with other promotional offers.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+-->

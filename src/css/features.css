@@ -1,0 +1,115 @@
+/* Styles for the section */
+#dynamic-features.section-background {
+  background-color: #231f1f;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+/* Container styles */
+.section3container {
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 1140px; /* equivalent to max-w-7xl */
+  padding-left: 20px; /* equivalent to px-5 */
+  padding-right: 20px; /* equivalent to px-5 */
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .section3container {
+    padding-left: 48px; /* equivalent to md:px-12 */
+    padding-right: 48px; /* equivalent to md:px-12 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .section3container {
+    padding-left: 64px; /* equivalent to lg:px-16 */
+    padding-right: 64px; /* equivalent to lg:px-16 */
+  }
+}
+
+/* Additional container styles */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: left;
+  margin-top: 48px; /* equivalent to mt-12 */
+}
+
+.flex-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Default to block layout */
+  gap: 48px; /* equivalent to gap-12 */
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    order: -1; /* equivalent to md:order-first */
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex; /* Switch to inline-flex layout for larger screens */
+    max-width: 1140px; /* equivalent to lg:max-w-7xl */
+  }
+}
+
+/* Title styles */
+.section3title {
+  max-width: 640px; /* equivalent to max-w-2xl */
+  font-size: 40px; /* equivalent to text-5xl */
+  font-weight: bold;
+  color: white;
+  letter-spacing: -0.05em; /* approximation of tracking-tight */
+}
+
+/* Subtitle styles */
+.bullet {
+  margin-top: 20px; /* equivalent to mt-5 */
+  font-size: 18px; /* equivalent to text-lg */
+  font-weight: bold;
+  line-height: 1.5; /* equivalent to leading-6 */
+  color: white;
+}
+
+/* Paragraph styles */
+.description {
+  color: #e1dad2 !important;
+  margin-top: 8px; /* equivalent to mt-2 */
+  font-size: 16px; /* equivalent to text-base */
+  color: #6b7280; /* equivalent to text-gray-500 */
+}
+
+/* List styles */
+.section3list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; /* equivalent to gap-4 */
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .section3list {
+    grid-template-columns: repeat(3, 1fr); /* equivalent to md:grid-cols-3 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .section3list {
+    gap: 48px; /* equivalent to lg:gap-12 */
+  }
+}
