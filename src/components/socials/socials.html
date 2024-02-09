@@ -1,15 +1,19 @@
+<!-- Social Media Component -->
+
 <!doctype html>
-<html lang="en">
+<html
+  class="no-js"
+  lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>dev.wind.jit</title>
-    <!-- meta -->
+    <title>Wind.JIT</title>
     <meta
       name="description"
       content="" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1" />
+
     <meta
       property="og:title"
       content="" />
@@ -22,42 +26,32 @@
     <meta
       property="og:image"
       content="" />
+
+    <link
+      rel="icon"
+      href="/favicon.ico"
+      sizes="any" />
+    <link
+      rel="icon"
+      href="/icon.svg"
+      type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="css/initial.css" />
+
+    <link
+      rel="manifest"
+      href="site.webmanifest" />
     <meta
       name="theme-color"
       content="#fafafa" />
-    <!-- end:meta -->
-
-    <!-- css:resets -->
-    <link
-      rel="stylesheet"
-      href="https://rsms.me/inter/inter.css" />
-    <link
-      rel="stylesheet"
-      href="./css/socials.css" />
-    <link
-      rel="stylesheet"
-      href="./css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="./css/initial.css" />
-    <!-- end:css:resets -->
-
-    <!-- tailwind cdn -->
-    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-    <script type="module">
-      import tailwindcssTypography from 'https://cdn.skypack.dev/@tailwindcss/typography';
-      window.tailwindConfig = { plugins: [tailwindcssTypography] };
-      window.tailwindCSS.refresh();
-    </script>
-    <!-- end:tailwind cdn -->
-
-    <!-- custom tailwind configuration -->
-    <script type="tailwind-config">
-      { "theme": { "extend": { "colors": { "elite-dark": "#141414", "elite-black": "#000000", "elite-light": "#FFFFFF", "elite-white-A3": "rgba(255, 255, 255, 0.35)", "elite-000": "#F4F4F5", "elite-100": "#FDE9F1", "elite-200": "#BBBDC5", "elite-300": "#727680",
-      "elite-400": "#4F5A6B", "elite-500": "#2F3137", "elite-600": "#3C4D61", "elite-700": "#231F20", "elite-800": "#BFF163", "elite-900": "#94E522", "elite-sp-pink": "#EB008B", "elite-sp-blue": "#00ADEE", "elite-sp-purple": "#836DC5" } } } }
-    </script>
-    <!-- end 
-  .. tailwind cdn -->
 
     <style>
       #app {
@@ -72,7 +66,7 @@
     <main
       id="main"
       class="main">
-      <!-- application content here -->
+      <!-- Add your site or application content here -->
       <div id="app">
         <!-- Social Demo -->
 
@@ -81,22 +75,48 @@
           class="social-container xuzjBY comp-kzel8jcm-container comp-kzel8jcm wixui-section undefined"
           data-testid="section-container"
           tabindex="-1">
-          <div class="si-container">
+          <!-- Background image -->
+          <div
+            id="comp-kzel8jcy"
+            data-testid="imageX"
+            class="z4Uj6S comp-kzel8jcy wixui-image">
+            <wix-image
+              id="img-comp-kzel8jcy"
+              data-image-info='{"containerId":"comp-kzel8jcy","alignType":"center","parallaxSpeed":1.5,"sourceSets":[],"imageData":{"uri":"d56505_ed74f654940443c798c80065bb17ce06~mv2.jpg","width":3000,"height":1332,"alt":"","name":"2.jpg","focalPoint":null}}'
+              data-has-ssr-src="true"
+              ><picture
+                ><img
+                  src="<?php echo get_stylesheet_directory_uri(); ?>/static.wixstatic.com/media/d56505_ed74f654940443c798c80065bb17ce06_mv2.jpg/v1/fill/w_147%2ch_65%2cal_c%2cq_80%2cusm_0.66_1.00_0.01%2cblur_2%2cenc_auto/2.jpg"
+                  alt=""
+                  style="object-fit: cover; object-position: 50% 50%" /></picture
+            ></wix-image>
+          </div>
+          <!-- End: Background image -->
+
+          <div
+            id="comp-kzhbpyc2"
+            class="si-container Z5xE6X comp-kzhbpyc2-container comp-kzhbpyc2 wixui-box">
+            <!-- Social Heading -->
             <div
               id="comp-kzhbpycy"
               class="BaOVQ8 tz5f0K comp-kzhbpycy wixui-text"
               data-testid="richTextElement">
               <h2 class="font_2"><span>FOLLOW OUR COMMUNITY</span></h2>
             </div>
-            <div class="icon-container">
+
+            <!-- Social Links -->
+            <div
+              class="comp-kzhbpydl gydiew"
+              id="comp-kzhbpydl icon-container"
+              aria-disabled="false">
               <!-- Instagram Icon Link -->
               <a
                 data-testid="linkElement"
-                href="https://instagram.com/"
                 target="_blank"
                 rel="noopener"
                 class="TFOeq0 zKbzSQ"
-                aria-disabled="false">
+                aria-disabled="false"
+                href="<?php echo esc_url($instagram_url); ?>">
                 <span>
                   <!-- Instagram Icon SVG -->
                   <svg
@@ -114,11 +134,11 @@
               <!-- Facebook Icon Link -->
               <a
                 data-testid="linkElement"
-                href="https://www.facebook.com/isihooveral"
                 target="_blank"
                 rel="noopener"
                 class="TFOeq0 zKbzSQ"
-                aria-disabled="false">
+                aria-disabled="false"
+                href="<?php echo esc_url($facebook_url); ?>">
                 <span>
                   <!-- Facebook Icon SVG -->
                   <svg
@@ -136,15 +156,11 @@
             </div>
           </div>
         </section>
-
-        <!-- End: Features Demo -->
       </div>
       <!-- bottom of app -->
     </main>
-    <!-- end:shell -->
 
-    <!-- scriptz -->
-    <script src="./js/app.js"></script>
-    <!-- end:scriptz -->
+    <!-- Add scriptz -->
+    <script src="js/app.js"></script>
   </body>
 </html>
