@@ -11,9 +11,10 @@ if ($youtube_video_id) {
     height: 100%;
   }
   </style>
-  <iframe id="video-comp-l072dqr0" src="https://www.youtube.com/embed/<?php echo esc_attr($youtube_video_id); ?>"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen style="object-fit: cover; width: 100%; height: 100%">
+  <iframe id="video-comp-l072dqr0"
+    src="https://www.youtube.com/embed/<?php echo esc_attr($youtube_video_id); ?>?autoplay=1&mute=1" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+    style="object-fit: cover; width: 100%; height: 100%">
   </iframe>
 </div>
 <?php 
@@ -36,4 +37,5 @@ if ($youtube_video_id) {
 <?php 
     }
 }
+
 ?>
