@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 11,
+  "editor.fontSize": 12,
   "editor.fontFamily": "SF Mono",
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
@@ -15,6 +15,6 @@
   "window.zoomLevel": 0,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.iconTheme": "bearded-icons",
-  "workbench.colorTheme": "CodeSandbox Black 2021",
+  "workbench.colorTheme": "ZED One Theme Dark",
   "github.copilot.editor.enableAutoCompletions": true
 }

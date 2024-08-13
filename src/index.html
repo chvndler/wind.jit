@@ -76,66 +76,54 @@
       <div id="app">
         <!-- Social Demo -->
 
-        <section
-          id="comp-kzel8jcm"
-          class="social-container xuzjBY comp-kzel8jcm-container comp-kzel8jcm wixui-section undefined"
-          data-testid="section-container"
-          tabindex="-1">
-          <div class="si-container">
+        <?php if ($set_banner === true): ?>
+        <section>
+          <div
+            id="marketing-banner"
+            class="marketing-banner">
             <div
-              id="comp-kzhbpycy"
-              class="BaOVQ8 tz5f0K comp-kzhbpycy wixui-text"
-              data-testid="richTextElement">
-              <h2 class="font_2"><span>FOLLOW OUR COMMUNITY</span></h2>
-            </div>
-            <div class="icon-container">
-              <!-- Instagram Icon Link -->
-              <a
-                data-testid="linkElement"
-                href="https://instagram.com/"
-                target="_blank"
-                rel="noopener"
-                class="TFOeq0 zKbzSQ"
-                aria-disabled="false">
-                <span>
-                  <!-- Instagram Icon SVG -->
-                  <svg
-                    width="48"
-                    height="48"
-                    viewBox="0 0 68 68"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M34.2981 15.2713C40.511 15.2713 41.2876 15.2713 43.8115 15.4655C50.2185 15.6596 53.1308 18.766 53.3249 24.9789C53.5191 27.5028 53.5191 28.0853 53.5191 34.2981C53.5191 40.511 53.5191 41.2876 53.3249 43.6174C53.1308 49.8302 50.0244 52.9366 43.8115 53.1308C41.2876 53.3249 40.7051 53.3249 34.2981 53.3249C28.0853 53.3249 27.3087 53.3249 24.9789 53.1308C18.5719 52.9366 15.6596 49.8302 15.4655 43.6174C15.2713 41.0934 15.2713 40.511 15.2713 34.2981C15.2713 28.0853 15.2713 27.3087 15.4655 24.9789C15.6596 18.766 18.766 15.6596 24.9789 15.4655C27.3087 15.2713 28.0853 15.2713 34.2981 15.2713ZM34.2981 11C27.8911 11 27.1145 11 24.7847 11.1942C16.2421 11.5825 11.5825 16.2421 11.1942 24.7847C11 27.1145 11 27.8911 11 34.2981C11 40.7051 11 41.4817 11.1942 43.8115C11.5825 52.3542 16.2421 57.0138 24.7847 57.4021C27.1145 57.5963 27.8911 57.5963 34.2981 57.5963C40.7051 57.5963 41.4817 57.5963 43.8115 57.4021C52.3542 57.0138 57.0138 52.3542 57.4021 43.8115C57.5963 41.4817 57.5963 40.7051 57.5963 34.2981C57.5963 27.8911 57.5963 27.1145 57.4021 24.7847C57.0138 16.2421 52.3542 11.5825 43.8115 11.1942C41.4817 11 40.7051 11 34.2981 11ZM34.2981 22.2608C27.697 22.2608 22.2608 27.697 22.2608 34.2981C22.2608 40.8993 27.697 46.3355 34.2981 46.3355C40.8993 46.3355 46.3355 40.8993 46.3355 34.2981C46.3355 27.697 40.8993 22.2608 34.2981 22.2608ZM34.2981 42.0642C30.0268 42.0642 26.5321 38.5695 26.5321 34.2981C26.5321 30.0268 30.0268 26.5321 34.2981 26.5321C38.5695 26.5321 42.0642 30.0268 42.0642 34.2981C42.0642 38.5695 38.5695 42.0642 34.2981 42.0642ZM46.7238 19.1543C45.1706 19.1543 44.0057 20.3193 44.0057 21.8725C44.0057 23.4257 45.1706 24.5906 46.7238 24.5906C48.277 24.5906 49.4419 23.4257 49.4419 21.8725C49.4419 20.3193 48.277 19.1543 46.7238 19.1543Z"
-                      fill="#231F20" />
-                  </svg>
-                </span>
-              </a>
-              <!-- Facebook Icon Link -->
-              <a
-                data-testid="linkElement"
-                href="https://www.facebook.com/isihooveral"
-                target="_blank"
-                rel="noopener"
-                class="TFOeq0 zKbzSQ"
-                aria-disabled="false">
-                <span>
-                  <!-- Facebook Icon SVG -->
-                  <svg
-                    width="48"
-                    height="48"
-                    viewBox="0 0 68 68"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M27.354 25.9441H21V34.4161H27.354V59.8323H37.9441V34.4161H45.5689L46.4161 25.9441H37.9441V22.3435C37.9441 20.4373 38.3677 19.5901 40.2739 19.5901H46.4161V9H38.3677C30.7429 9 27.354 12.3888 27.354 18.7429V25.9441Z"
-                      fill="#231F20" />
-                  </svg>
-                </span>
-              </a>
+              x-cloak
+              x-data="{ bannerVisible: false, bannerVisibleAfter: 300 }"
+              x-show="bannerVisible"
+              x-transition:enter="banner-visible-enter banner-visible-enter-active"
+              x-transition:leave="banner-visible-leave banner-visible-leave-active"
+              x-init="setTimeout(() => { bannerVisible = true }, bannerVisibleAfter);"
+              class="banner-inner">
+              <div
+                class="banner-content"
+                style="background-color: #94e522">
+                <img
+                  src="http://www.isielitetraining.com/wp-content/uploads/2024/04/preszn-black.png"
+                  class="banner-logo" />
+                <img
+                  src="http://www.isielitetraining.com/wp-content/uploads/2024/04/4weeks-1.png"
+                  class="banner-logo" />
+                <div class="banner-text flex-center">
+                  <p
+                    class="subtitler"
+                    style="padding-top: 6px">
+                    Get back in the game, it's your time.<br />
+                  </p>
+                </div>
+
+                <div class="banner-links flex-center">
+                  <a
+                    href="https://preseason.isielitetraining.com/#preseason-sign-up"
+                    class="banner-button external">
+                    Sign up now
+                  </a>
+                  <button
+                    @click="bannerVisible=false;"
+                    class="banner-button close-button">
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
+        <?php endif; ?>
 
         <!-- End: Features Demo -->
       </div>
